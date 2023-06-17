@@ -9,7 +9,15 @@ notes.get("/", (req, res) => {
 });
 
 // GET route for retrieveing just ONE note
-notes.get("/", (req, res) => {});
+notes.get("/:id", (req, res) => {
+  const requestedID = req.params.id;
+
+  for (i = 0; i < noteData.length; i++) {
+    if (requestedID === noteData[i].id) {
+      return res.json(JSON.parse(noteData[i]));
+    }
+  }
+});
 
 // POST route for adding a note
 notes.post("/", (req, res) => {
@@ -21,12 +29,12 @@ notes.post("/", (req, res) => {
     const newNote = {
       title,
       text,
-      uuid: uuidv4(),
+      id: uuidv4(),
     };
     readAndAppend(newNote, "./db/db.json");
-    res.json(`Note added successfully.`);
+    res.json("Note added successfully.");
   } else {
-    res.error("Error in adding note");
+    res.json("Error in adding note");
   }
 });
 
