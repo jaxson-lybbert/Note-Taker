@@ -1,17 +1,17 @@
 [
-    {
-        "title": "Demo note",
-        "text": "demo note\n",
-        "id": "39156d5f-8abd-4a66-8794-3f0a43e28954"
-    },
-    {
-        "title": "New Note",
-        "text": "This is a new note",
-        "id": "3c003513-835d-4b44-85ca-3df7b6427613"
-    },
-    {
-        "title": "This is another new note",
-        "text": "note text",
-        "id": "d4dfbdef-a11a-41c8-9351-ea2be2d428c7"
-    }
+  {
+    "title": "Demo note",
+    "text": "demo note\n",
+    "id": "39156d5f-8abd-4a66-8794-3f0a43e28954"
+  },
+  {
+    "title": "New Note",
+    "text": "This is a new note",
+    "id": "3c003513-835d-4b44-85ca-3df7b6427613"
+  },
+  {
+    "title": "This is another new note",
+    "text": "note text",
+    "id": "d4dfbdef-a11a-41c8-9351-ea2be2d428c7"
+  }
 ]

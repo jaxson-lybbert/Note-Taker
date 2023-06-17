@@ -38,4 +38,15 @@ notes.post("/", (req, res) => {
   }
 });
 
+// DELETE request for exisiting notes
+// notes.delete("/:id", (req, res) => {
+//   const requestedID = req.params.id;
+
+//   for (i = 0; i < noteData.length; i++) {
+//     if (requestedID === noteData[i].id) {
+//       readAndAppend(JSON.parse(noteData.splice(i, 1)), "./db/db.json");
+//     }
+//   }
+// });
+
 module.exports = notes;
