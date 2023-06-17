@@ -1,6 +1,16 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "New note",
+        "text": "This is a new note",
+        "uuid": "852b3612-ba3d-4415-929a-7a05ac060599"
+    },
+    {
+        "title": "More new notes",
+        "text": "Another note",
+        "uuid": "f70bdc88-e794-48f6-8bbb-039d3dd7ac8e"
     }
 ]
