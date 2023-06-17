@@ -1,10 +1,10 @@
 const notes = require("express").Router();
-const notesData = require("../db/db.json");
+const { readFromFile, readAndAppend } = require("../helpers/fsUtils");
 const { v4: uuidv4 } = require("uuid"); // unique id for each notes?
 
 // GET request that gets all notes from database
 notes.get("/", (req, res) => {
-  res.json(JSON.parse(notesData));
+  readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
 notes.post("/", (req, res) => {
@@ -18,6 +18,10 @@ notes.post("/", (req, res) => {
       text,
       uuid: uuidv4(),
     };
+    readAndAppend(newTip, "./db/db.json");
+    res.json(`Note added successfully.`);
+  } else {
+    res.error("Error in adding note");
   }
 });
 
