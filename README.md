@@ -14,7 +14,7 @@ A full stack application, deployed with Heroku, that allows the user to make not
 
 ## Installation
 
-No installation is necessary. The application is accessed via a Heroku link.
+No installation is necessary. The application is accessed via a Heroku link [here](https://thawing-scrubland-47216-f5988a841865.herokuapp.com).
 
 ## Usage
 
